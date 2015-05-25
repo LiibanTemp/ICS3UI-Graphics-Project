@@ -1,20 +1,25 @@
 package you.da.man;
+// this is for Riley D.
+// I am going to put a timer in PanDisp, and update a Label in PanOut.
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+import javax.swing.*;
+import java.awt.*;
 
-/**
- *
- * @author gulat5020
- */
-public class PanMain {
+public class PanMain extends JPanel // panel definition
+{
+    /*PanOut panOut = new PanOut();
+    PanDisp panDisp = new PanDisp(panOut);
+    PanLabelChange panLabelChange = new PanLabelChange(panDisp);
+    PanColour panColour = new PanColour(panDisp);
+    private PanOut PanOut;*/
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public PanMain() {
+        // this next line tells PanMain that it has a border layout.
+        setLayout(new BorderLayout());
+        add(panLabelChange, BorderLayout.SOUTH);
+        add(panDisp, BorderLayout.CENTER);
+         add(panOut, BorderLayout.EAST);
+        add(panColour, BorderLayout.WEST);
+        
     }
 }
