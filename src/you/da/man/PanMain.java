@@ -15,11 +15,11 @@ public class PanMain extends JPanel // panel definition
 
     public PanMain() {
         // this next line tells PanMain that it has a border layout.
-        setLayout(new BorderLayout());
+        /*setLayout(new BorderLayout());
         add(panLabelChange, BorderLayout.SOUTH);
         add(panDisp, BorderLayout.CENTER);
          add(panOut, BorderLayout.EAST);
-        add(panColour, BorderLayout.WEST);
+        add(panColour, BorderLayout.WEST);*/
         
     }
 }
