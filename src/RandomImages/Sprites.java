@@ -6,8 +6,7 @@ package RandomImages;
 
 import java.awt.Image;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 import javax.imageio.ImageIO;
 
@@ -23,8 +22,7 @@ public class Sprites {
             e.printStackTrace();
         }
     }
-
     public BufferedImage getSprite(int xGrid, int yGrid) {
         return biSpriteSheet.getSubimage(xGrid * TILE_SIZE, yGrid * TILE_SIZE, TILE_SIZE, TILE_SIZE);
     }
-}
+} 
