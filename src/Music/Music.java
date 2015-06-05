@@ -1,3 +1,4 @@
+//The songs are hardcoded and they need to be altered to run on another computer
 package Music;
 
 
@@ -16,12 +17,9 @@ public class Music {
 
         if (sChoice.equals("A")) {
 
-            // open the sound file as a Java input stream
-            String Wastelands = "H:\\NetBeansProjects\\Wastelands.wav";
+            String Wastelands = "H:\\NetBeansProjects\\Wastelands.wav";//***************The song is in the project's folder
             InputStream in = new FileInputStream(Wastelands);
-            // create an audiostream from the inputstream
             AudioStream audioStream = new AudioStream(in);
-            // play the audio clip with the audioplayer class
             AudioPlayer.player.start(audioStream);
             System.out.println("Type Stop to stop when you are done");
             sChoice = sin.next();
@@ -32,7 +30,7 @@ public class Music {
 
         } else if (sChoice.equals("B")) {
 
-            String Final = "H:\\Netbeans\\Final Masquerade.wav";
+            String Final = "H:\\Netbeans\\Final Masquerade.wav";//***************The song is in the project's folder
             InputStream in = new FileInputStream(Final);
             AudioStream audioStream = new AudioStream(in);
             AudioPlayer.player.start(audioStream);
