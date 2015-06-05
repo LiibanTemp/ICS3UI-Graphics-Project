@@ -1,3 +1,4 @@
+// this code does not work with the music, alteration have been made which still wouldnt start music
 package Music;
 
 //captain kesty
@@ -11,6 +12,6 @@ public class AudioEX1 {
         InputStream in = new FileInputStream(new File("Wastelands.wav")); // must be in .wav format
         AudioStream audioEX = new AudioStream(in);
         AudioPlayer.player.start(audioEX);
-        AudioPlayer.player.stop(audioEX);
+       // AudioPlayer.player.stop(audioEX);
     }
 }
